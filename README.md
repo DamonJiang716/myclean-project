@@ -1,12 +1,21 @@
 
-How to edit this: test-2025
-* Option-1 (tested and worked ok): PyCharm supports editing of these .md files. Then you need to push to the main branch or make a pull request.
-* Option-2 (tested ok): Edit and commit it directly on github. Then any local repo copies will need to be "updated".
 
-# cp3407-project-v2024 template [Delete or change to your team/project name before submitting]
+# MyClean - Cleaning Service Booking System
 
-This a project assignment template for CP3407. 
-The following is the list of items, which are required to be completed.
+## Project Overview
+MyClean is a cleaning service booking system developed by **Yandong Jiang**.  
+This project aims to:
+- Allow customers to quickly find reliable cleaners and book cleaning services online.
+- Enable cleaners to manage their schedules and track orders efficiently.
+- Provide an easy-to-use platform for both customers and service providers.
+
+### Key Features
+Customer & Cleaner Registration/Login
+Online Booking System 
+Order Management & Tracking
+Integrated Payment System (Stripe/PayPal Mock Payments)  
+Cleaner Profile & Rating System
+Admin Dashboard for Monitoring & Approvals 
 
 ## How to submit [You may delete this before submitting]
 
@@ -16,11 +25,7 @@ The following is the list of items, which are required to be completed.
 
 ## Team
 
-It is recommended to complete this assignment in a group of 2-4 students.
-1. Student 1
-2. Student name 2
-3. Name 3
-4. Name 4
+1.Yandong Jiang
 
 
 # Project planning BEFORE iteration-1, (see chapters 1-3)
