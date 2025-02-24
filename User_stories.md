@@ -111,7 +111,6 @@ designed to support **customers, service providers (cleaners), and administrator
 | US-06, US-07, US-12, US-13, US-16, US-17                   | **Should-Have** | 2–4 days each      |
 | US-08, US-14, US-18, US-19, US-20                         | **Could-Have**  | 2–6 days each      |
 
-> **Note**: The **effort estimates** are approximate and may adjust based on team size, complexity, and actual development pace.
 
 ---
 
