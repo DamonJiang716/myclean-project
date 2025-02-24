@@ -137,4 +137,3 @@ designed to support **customers, service providers (cleaners), and administrator
 
 ---
 
-> **By following these user stories and focusing on Must-Have functionality first**, you’ll be able to deliver a functional MyClean MVP on time and on budget—then iterate to add Should-Have and Could-Have features for an even richer experience.
