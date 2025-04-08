@@ -56,6 +56,14 @@ Screenshot:
 
 ---
 
+**Booking Detail View**  
+When clicking on a booking, full details are shown including time, client info, payment, and duration.
+
+Screenshot:  
+![Booking Detail](../images/upcoming_booking_detail.png)
+
+---
+
 ## Completed:
 
 - [x] Cleaner dashboard view implemented  
