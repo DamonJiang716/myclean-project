@@ -1174,3 +1174,43 @@ function helloworld() {
 	}
 	// register shortcode
 	add_shortcode('greeting', 'helloworld');
+
+	function myclean_display_bookings() {
+    if (!is_user_logged_in()) {
+        return "<p>Please <a href='" . wp_login_url() . "'>log in</a> to view your bookings.</p>";
+    }
+
+    global $wpdb;
+    $current_user = wp_get_current_user();
+    $user_email = $current_user->user_email;
+
+    $table_name = $wpdb->prefix . 'booking';
+    $results = $wpdb->get_results("SELECT * FROM $table_name ORDER BY sort_date DESC");
+
+    $output = "<h3>Your Bookings</h3>";
+
+    $has_results = false;
+    foreach ($results as $row) {
+        // Check if current user's email exists in the 'form' field
+        if (strpos($row->form, $user_email) !== false) {
+            $has_results = true;
+            $output .= "<div style='border:1px solid #ccc; padding:10px; margin-bottom:10px;'>";
+            $output .= "<strong>Booking ID:</strong> {$row->booking_id}<br>";
+            $output .= "<strong>Date:</strong> {$row->sort_date}<br>";
+            $output .= "<strong>Status:</strong> {$row->status}<br>";
+            $output .= "<strong>Details:</strong><br><pre style='white-space:pre-wrap;'>{$row->form}</pre>";
+            $output .= "</div>";
+        }
+    }
+
+    if (!$has_results) {
+        $output .= "<p>You have no bookings yet.</p>";
+    }
+
+    return $output;
+}
+add_shortcode('my_bookings', 'myclean_display_bookings');
+
+add_shortcode('test_short', function() {
+    return "<p style='color:red;'>This is a test shortcode working!</p>";
+});

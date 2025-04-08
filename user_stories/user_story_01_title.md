@@ -1,42 +1,77 @@
-Create more md files like this one as needed. Place them into the same folder 
-as this [user_stories folder](./)
+# User Story Title: Registration & Authentication  
+Other versions: Sign Up / Sign In, Email or Phone Login  
 
-# User story title: e.g. Show current deals
+---
 
-Keep any other version here as well, e.g. Display current deals, Let user to click on "show-current-deals".
+## Priority: 1  
+MoSCoW Category: Must-Have  
+Iteration: Iteration 1  
+This is an essential feature that allows customers to register, log in, and use the booking system securely.
 
-## Priority: 10 (e.g. latest for iteration-1)
-Any notes on priority go here. 
-Note you may have different priorities at different stages of you project.
-Again, keep all changes here for marking.
+---
 
-## Estimation: e.g. 2 days
-Any notes on estimation go here. Keep your planning poker game numbers. For example
-* Bob: 1 day (e.g. estimated before iteration-1)
-* Lisa: 2 days
-* Jack: 3 days
+## Estimation: 3 days  
+Developer: Yandong Jiang  
+Estimated time: 3 days  
 
-## Assumptions (if any):
+---
 
-## Description: e.g. The web page will show current deals to Orion's orbits users
-You need to keep all versions here so that your instructor/marker can see your changes easily. 
-In a real project, your older versions could be viewed via commits.
+## Assumptions:
+- Users can register and log in using email or phone number  
+- Phone login uses simulated SMS code (mock)  
+- Social login (e.g., Google/Facebook) is not included in this version  
+- The system keeps users logged in until they manually log out  
 
-Description-v1: e.g. The web site will show current deals to Orion's orbits users
+---
 
-## Tasks, see chapter 4.
+## Description:
 
-1. Task 1, Estimation XX days
-2. ...
+### Description-v1:  
+As a customer, I want to register and log in (via email or phone), so that I can securely access and manage my cleaning bookings.
 
+### Description-v2 (after sprint planning):  
+The system should allow customers to:  
+- Register using email/password or phone number  
+- Log in using their registered credentials  
+- Access the dashboard after logging in  
+- Stay logged in unless the user chooses to log out
 
-# UI Design:
-* (New, not in the textbook) 
-* Many user stories are connected to a User interface.
-* Insert a mockup design screenshot using any prototyping tools, e.g. [https://ninjamock.com/](https://ninjamock.com/)
+---
 
-# Completed:
-* (New, not in the textbook) 
-* Insert screenshots of completed. 
-* If you have multiple versions (changes between iteractions), show them all.
+## Tasks (See Chapter 4):
+1. Design UI for Register and Login pages – 0.5 day  
+2. Implement registration and login logic – 1 day  
+3. Add validation for input fields (email format, required password, etc.) – 0.5 day  
+4. Implement mock SMS verification (if phone login is used) – 0.5 day  
+5. Ensure the system remembers logged-in users – 0.5 day  
+
+---
+
+## UI Design:
+
+Below are screenshots of the implemented UI:
+
+**Register Page**  
+![Register Page](../images/register.png)
+
+**Login Page**  
+![Login Page](../images/login.png)
+
+**Password Reset Page**  
+![Password Reset Page](../images/password_reset.png)
+
+Live site:  
+ https://myclean.168chinesetcw.com/register-as-customer/
+
+---
+
+## Completed:
+
+- [x] Register page completed and deployed  
+- [x] Login page implemented with basic validation  
+- [x] Login redirects to dashboard  
+- [x] Password reset UI page added  
+- [x] UI screenshots included in GitHub `images/` folder  
+
+---
 
