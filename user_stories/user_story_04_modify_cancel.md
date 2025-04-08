@@ -17,7 +17,7 @@ Estimated time: 3 days
 ---
 
 ## Assumptions:
-- Only bookings within valid time window (e.g., >24h before service) can be changed/canceled  
+- Only bookings within valid time window can be changed/canceled  
 - Confirmation step must be present to avoid accidental cancellation  
 - After cancellation, appointment status updates and email/notification is sent  
 - Cleaners will be notified of cancellation or schedule change  
@@ -53,7 +53,7 @@ Customers can:
 **Appointment Dashboard View**  
 Shows upcoming bookings with cancel option.
 
-📷 Screenshot:  
+Screenshot:  
 ![Booking Dashboard](../images/booking_cancel.png)
 
 ---
@@ -61,7 +61,7 @@ Shows upcoming bookings with cancel option.
 **Cancellation Confirmation Modal**  
 Popup to confirm user's action.
 
-📷 Screenshot:  
+Screenshot:  
 ![Confirm Cancel](../images/booking_cancel_comfirm.png)
 
 ---
@@ -69,7 +69,7 @@ Popup to confirm user's action.
 **Post-Cancellation View**  
 Status is updated to “Canceled”, and a success message appears.
 
-📷 Screenshot:  
+Screenshot:  
 ![Booking Canceled](../images/booking_canceled.png)
 
 ---
