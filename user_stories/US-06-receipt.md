@@ -51,7 +51,7 @@ The system should:
 Screenshots of implemented receipt/confirmation page:
 
 **Receipt Panel after Payment:**  
-![Receipt Page](../images/receipt .png)
+![Receipt Page](../images/receipt.png)
 
 ---
 
