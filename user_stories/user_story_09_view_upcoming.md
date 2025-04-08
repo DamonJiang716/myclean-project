@@ -3,7 +3,7 @@ Other versions: Cleaner dashboard view, Appointment schedule
 
 ---
 
-## Priority: 4  
+## Priority: 9 
 MoSCoW Category: Must-Have  
 Iteration: Iteration 1  
 Allows cleaners to check their upcoming appointments with essential details, ensuring they can plan their work schedule effectively.
