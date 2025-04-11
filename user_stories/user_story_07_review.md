@@ -17,8 +17,8 @@ Estimated time: 3 days
 ---
 
 ## Assumptions: 
-- Only verified customers can submit reviews  
-- Ratings will be averaged for display on cleaner profile  
+- Reviews are published immediately without admin moderation
+- Reviews include basic fields: rating, title, content, name, email 
 - Admin can moderate inappropriate reviews  
 
 ---
