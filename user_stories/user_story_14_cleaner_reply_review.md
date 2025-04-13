@@ -3,7 +3,7 @@ Other versions: Cleaner responds to feedback to improve trust
 
 ---
 
-## Priority: 8  
+## Priority: 14  
 MoSCoW Category: Could-Have  
 Iteration: Iteration 2  
 This feature allows cleaners to respond publicly to customer reviews, enhancing communication and professionalism.
