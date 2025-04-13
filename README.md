@@ -1,72 +1,123 @@
-
-
 # MyClean - Cleaning Service Booking System
 
 ## Project Overview
-MyClean is a cleaning service booking system developed by **Yandong Jiang**.  
-This project aims to:
-- Allow customers to quickly find reliable cleaners and book cleaning services online.
-- Enable cleaners to manage their schedules and track orders efficiently.
-- Provide an easy-to-use platform for both customers and service providers.
+MyClean is a cleaning service booking system developed by **Yandong Jiang** for the CP3407 Software Engineering Project (TR1-2025).  
+The system enables customers to book cleaning services online and allows cleaners to manage their availability, orders, and income.  
+It also includes administrative features for managing users and monitoring platform performance.
 
-### Key Features
-Customer & Cleaner Registration/Login
-Online Booking System 
-Order Management & Tracking
-Integrated Payment System (Stripe/PayPal Mock Payments)  
-Cleaner Profile & Rating System
-Admin Dashboard for Monitoring & Approvals 
+This project was developed using Agile methodology across two full iterations, covering the full lifecycle: planning, user story development, implementation, testing, and deployment.
 
-## How to submit [You may delete this before submitting]
+## Key Features
 
-2. Add your instructor (JCU-Australia: jc138691@gmail.com Dmitry Konovalov) as a team member to view your project on github
-1. Submit link to your repository
-2. Download your github repository as a zip file and submit via LearnJCU.
+- User registration and login (Customer and Cleaner)
+- Password reset via email
+- Cleaner profile creation and public browsing
+- Online booking system (request, accept/reject)
+- In-app messaging between customers and cleaners
+- Stripe/PayPal mock payment system
+- Invoice and receipt generation
+- Ratings and reviews with public reply
+- Admin dashboard: user verification, banning, analytics
+- Cleaner income tracking and calendar sync
 
-## Team
+## Tech Stack
 
-1.Yandong Jiang
-
-
-# Project planning BEFORE iteration-1, (see chapters 1-3)
-Checklist/TODOs: 
-* Update the following during each week prac session
-* github entry timestamp is BEFORE the iteration-1
-* User stories are correct: see p39
-* Must have more user stories than fits into iterations 1 and 2. To practice the priority.
-* [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
-* ...
-
-Total: YY days
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP 8.3 and WordPress  
+- **Database:** MySQL  
+- **Local Development Environment:** WAMP (localhost) & aaPanel/BaoTa (deployed to [myclean.168chinesetcw.com](http://myclean.168chinesetcw.com))  
+- **Optional Deployment:** Hostinger (VPS)  
+- **Version Control:** Git & GitHub
 
 
-## Iteration 1 [duration 3-4 weeks], add your start and end dates 
+## Developer
 
-* Goal is to have 2 iterations during a trimester of teaching.
-* Update the following during each week prac session
-* During pracs, you may experiment with using other github ways of tracking changes, e.g. via pull requests.
+- Yandong Jiang (solo developer)
 
-1. [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
+---
 
-Total: YY days
+## Project Planning Phase (Before Iteration 1)
 
+- Repository initialized before Iteration 1
+- User stories written using INVEST criteria 
+- Prioritized with MoSCoW method
+- Estimated durations in days
+- All stories stored in [`user_stories/`](./user_stories/)
+- Screenshots stored in [`images/`](./images/)
 
-### Iteration 2 [duration 3-4 weeks], add your start and end dates
-Goal is to have 2 iterations during a trimester of teaching.
-1. [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
+---
 
-Total: YY days
+## Iteration 1: 2025-03-01 to 2025-03-28
 
-### Not enough time/developers: 
-1. [user story title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
+### Goal:
+Deliver core features: user registration/login, booking flow, and cleaner response.
 
-Total: YY days
+### Implemented Stories:
 
-# Actual iterations
-1. [Iteration-1](./iteration_1.md)
-2. [Iteration-2](./iteration_2.md)
+1. [US-01: Register & Login](./user_stories/user_story_01_registration_authentication.md) – Must-Have – 3 days  
+2. [US-02: Password Reset](./user_stories/user_story_02_reset_password.md) – Must-Have – 1 day  
+3. [US-03: Booking](./user_stories/user_story_03_booking.md) – Must-Have – 5 days  
+4. [US-04: Modify/Cancel Booking](./user_stories/user_story_04_modify_cancel.md) – Must-Have – 3 days  
+5. [US-10: Accept/Decline Booking](./user_stories/user_story_10_accept_decline.md) – Must-Have – 2 days  
 
+**Total Estimated Effort:** 14 days  
+**Actual Completed:** 13 days  
+**Velocity:** 13 / 20 = 0.65  
 
+See full iteration report: [iteration_1.md](./iteration_1.md)
+
+---
+
+## Iteration 2: 2025-04-01 to 2025-04-14
+
+### Goal:
+Complete remaining platform features including payments, messaging, and admin tools.
+
+### Implemented Stories:
+
+- [US-05: Payment Integration](./user_stories/user_story_05_payment.md) – 2 days  
+- [US-06: Invoice/Receipt](./user_stories/user_story_06_receipt.md) – 1 day  
+- [US-07: Customer Review](./user_stories/user_story_07_review.md) – 2 days  
+- [US-08: In-App Chat](./user_stories/user_story_08_chat.md) – 3 days  
+- [US-09: View Upcoming Bookings](./user_stories/user_story_09_view_upcoming.md) – 4 days  
+- [US-11: Income Tracking](./user_stories/user_story_11_cleaner_income.md) – 3 days  
+- [US-12: Calendar Sync](./user_stories/user_story_12_calendar_sync.md) – 2 days  
+- [US-13: Profile Upload](./user_stories/user_story_13_cleaner_profile.md) – 3 days  
+- [US-14: Review Reply](./user_stories/user_story_14_cleaner_reply_review.md) – 2 days  
+- [US-15: Admin Verify Cleaner](./user_stories/user_story_15_admin_verify_cleaner.md) – 4 days  
+- [US-16: Admin Suspend/Unban](./user_stories/user_story_16_admin_suspend_user.md) – 2 days  
+- [US-17: Admin Analytics Dashboard](./user_stories/user_story_17_admin_dashboard.md) – 4 days  
+- [US-04 Task C: Refund Logic](./user_stories/user_story_04_modify_cancel.md) – 1 day  
+
+**Total Estimated Effort:** 36 days  
+**Planned Capacity:** 6.5 days  
+**Actual Completed:** 36 days (completed in advance)  
+**Velocity:** 36 / 10 = 3.6  
+
+See full iteration report: [iteration_2.md](./iteration_2.md)
+
+---
+
+## Burn Down Charts and Velocity Summary
+
+| Iteration    | Duration             | Estimated Capacity | Actual Completed | Velocity |
+|--------------|----------------------|--------------------|------------------|----------|
+| Iteration 1  | 2025-03-01 – 03-28   | 14 dev-days        | 13 dev-days      | 0.65     |
+| Iteration 2  | 2025-04-01 – 04-14   | 6.5 dev-days       | 36 dev-days      | 3.6      |
+
+---
+
+## Project Files
+
+- All user stories: [`user_stories/`](./user_stories/)
+- Screenshots and UI evidence: [`images/`](./images/)
+- Iteration reports:
+  - [iteration_1.md](./iteration_1.md)
+  - [iteration_2.md](./iteration_2.md)
+
+---
+
+## Final Notes
+
+The MyClean platform is now fully functional and ready for testing, evaluation, and deployment.  
+This project demonstrates agile planning, iterative delivery, and clear documentation throughout its lifecycle.
